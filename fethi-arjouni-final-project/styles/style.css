@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+header {
+  padding: 0.1em 0.1em 0.1em 0;
+}
+
+.logo .br {
+  font-family: verdana;
+}
+
+nav {
+  background-color: #ffffff;
+  height: 60px;
+  letter-spacing: 5px;
+  margin-left: -16px;
+  margin-top: -10px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%; 
+  z-index: 9999;
+}
+
+.logo h1,
+nav ul {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1em;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #808080;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: none;
+  margin-right: 1em
+}
+
+.hero img {
+  visibility: hidden;
+  width: 100%;
+}
+
+.hero {
+  background-image: url('../images/architect.jpg');
+  background-size: cover;
+  margin-top: 3em;
+}
+
+.hero .logo {
+  letter-spacing: 5px;
+}
+
+section .br {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: x-large;
+  opacity: 0.8;
+  padding: 0.3em;
+}
+
+section .logo h1 {
+  color: #ffffff;
+  font-size: x-large;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  left: 42%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50% -50%);
+}
+
+section .logo > h1 {
+  visibility: hidden;
+}
+
+section .logo .br {
+  visibility: visible;
+}
+
+.hero {
+  margin-bottom: 3em;
+}
+
+h2 {
+  font-size: 110%;
+  margin-bottom: 0.8em;
+}
+
+hr {
+  color: #808080;
+  margin-bottom: 1em;
+  opacity: 0.3;
+}
+
+.first-hr {
+  margin-bottom: 3em;
+} 
+
+.projects img {
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+.house {
+  position: relative;
+}
+
+.house .house-name {
+  left: 0%;
+  position: absolute;
+  top: 0%;
+}
+
+.house-name {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.8em 1.2em;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.projects {
+  margin-bottom: 3em;
+}
+
+.about img {
+  filter: grayscale(70%);
+  margin-bottom: 1em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.about h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.about h4 {
+  color: #808080;
+  font-weight: bold;
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
+
+.about p {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.about button {
+  border: none;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.about {
+  margin-bottom: 4em;
+}
+
+.contact p {
+  margin-bottom: 1em;
+}
+
+form input {
+  border: 1px solid #808080;
+  border-radius: 2px;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+i {
+  color: #808080;
+  margin-top: 0.6em;
+  padding: 0.5em;
+  position: absolute;
+  right: 1em;
+}
+
+form button {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  font-size: 0.8em;
+  margin-top: 1em;
+  padding: 1em;
+  text-transform: uppercase;
+  width: 12em;
+}
+
+form {
+  margin-bottom: 3em;
+}
+
+footer img {
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+@media only screen and (min-width: 620px) {
+  nav ul {
+    display: block;
+  }
+
+  section .logo > h1 {
+    visibility: visible;
+  }
+
+  .projects {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;  
+  }
+
+  .house {
+    width: 49.3%;
+  }
+
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .staff {
+    width: 49.3%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects {
+    justify-content: space-between;
+  }
+
+  .house {
+    width: 24.25%;
+  }
+
+  .staff {
+    width: 24.25%;
+  }
+}
